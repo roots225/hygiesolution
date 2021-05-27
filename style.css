@@ -10858,6 +10858,12 @@ section .section-title {
 
 .offer-item {
   text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .offer-item {
+    margin-bottom: 0;
+  }
 }
 .offer-item h4, .offer-item .h4 {
   font-size: 2.5rem;
@@ -10912,21 +10918,74 @@ section .section-title {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .partners-list {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .partners-list li {
   display: inline-block;
   list-style: none;
-  width: 20%;
+  width: 100%;
   margin: 15px 0;
   text-align: center;
 }
 .partners-list li img {
-  width: 80%;
+  width: 50%;
+}
+@media screen and (min-width: 1200px) {
+  .partners-list li img {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .partners-list li {
+    width: 20%;
     margin: 30px 0px;
   }
+}
+
+.materiels-more .description {
+  text-align: center;
+  padding: 20px;
+}
+.materiels-more .image-container img {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .materiels-more .image-container img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.materiels-more-infos .desciption-container {
+  text-align: left;
+}
+.materiels-more-infos .underlined-title {
+  color: #58468c;
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+.materiels-more-infos .underlined-title:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #58468c;
+  left: 0;
+  bottom: -10px;
+}
+.materiels-more-infos .image-container img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
