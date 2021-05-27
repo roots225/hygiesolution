@@ -10859,9 +10859,17 @@ section .section-title {
 .offer-item {
   text-align: center;
 }
+.offer-item h4, .offer-item .h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #58468c;
+  font-weight: bold;
+}
 .offer-item .offer-price {
   color: #fff;
   background-color: #58468c;
+  padding: 15px 10px;
+  font-size: 1.2rem;
 }
 .offer-item .offer-capacities {
   margin: 0;
@@ -10870,6 +10878,11 @@ section .section-title {
 .offer-item .offer-capacities li {
   list-style: none;
   background-color: #ced4da;
+  padding: 15px 5px;
+  color: #000;
+}
+.offer-item .offer-capacities li:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
