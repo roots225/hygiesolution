@@ -10885,4 +10885,48 @@ section .section-title {
   margin-bottom: 5px;
 }
 
+.back-to-top {
+  display: inline-block;
+  position: fixed;
+  z-index: 999;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: none;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 1.875rem;
+  background-color: #58468c;
+  color: #fff;
+  background-size: 1.125rem 1.125rem;
+  text-indent: -9999px;
+}
+.back-to-top i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.partners-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.partners-list li {
+  display: inline-block;
+  list-style: none;
+  width: 20%;
+  margin: 15px 0;
+  text-align: center;
+}
+.partners-list li img {
+  width: 80%;
+}
+@media screen and (min-width: 1200px) {
+  .partners-list li {
+    margin: 30px 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
