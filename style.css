@@ -10733,6 +10733,34 @@ body {
   font-weight: 400;
 }
 
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.subtitle {
+  color: #58468c;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.title-secondary {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.list-unstyled li {
+  list-style: none;
+}
+
 .navbar-brand .logo {
   height: 30px;
 }
@@ -10780,7 +10808,7 @@ body {
 }
 
 section {
-  padding: 50px 15px;
+  padding: 50px 0px;
 }
 
 .pros-item {
@@ -10904,10 +10932,13 @@ section .section-title {
   background-color: #58468c;
   color: #fff;
   background-size: 1.125rem 1.125rem;
-  text-indent: -9999px;
+  text-align: center;
+}
+.back-to-top:hover {
+  background-color: #9b90ba;
 }
 .back-to-top i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -10953,6 +10984,14 @@ section .section-title {
   text-align: center;
   padding: 20px;
 }
+.materiels-more .image-container {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .materiels-more .image-container {
+    min-height: 500px;
+  }
+}
 .materiels-more .image-container img {
   width: 100%;
 }
@@ -10971,7 +11010,7 @@ section .section-title {
 }
 .materiels-more-infos .underlined-title {
   color: #58468c;
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
   margin-bottom: 20px;
 }
@@ -10986,6 +11025,33 @@ section .section-title {
 }
 .materiels-more-infos .image-container img {
   width: 100%;
+}
+
+.materiels-prices .materiels-prices-item {
+  padding: 15px;
+}
+.materiels-prices .materiels-prices-item .price-item {
+  color: #58468c;
+  font-weight: 700;
+}
+.materiels-prices .materiels-prices-item .description {
+  text-align: center;
+}
+.materiels-prices .materiels-prices-item .description > img {
+  margin: 20px 0;
+}
+@media screen and (min-width: 1200px) {
+  .materiels-prices .materiels-prices-item .description > img {
+    max-width: 60%;
+  }
+}
+.materiels-prices .materiels-prices-item .description ul li {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .materiels-prices .materiels-prices-item {
+    padding: 15px 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

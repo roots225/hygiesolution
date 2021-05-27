@@ -15,6 +15,34 @@ body {
   color: $gray-600;
   font-weight: 400;
 }
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  margin: 0;
+}
+
+// helpers classes
+.w-80 {
+  width: 80%;
+}
+.subtitle {
+  color: $primary;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.title-secondary {
+  font-size: 2rem;
+  text-align: center;
+}
+.list-unstyled {
+  li {
+    list-style: none;
+  }
+}
+// endof helpers classes
+
 // navbar brand
 .navbar-brand {
   .logo {
@@ -69,7 +97,7 @@ img {
 }
 
 section {
-  padding: 50px 15px;
+  padding: 50px 0px;
 }
 
 // Pros-item elements
@@ -195,9 +223,12 @@ section {
   background-color: $primary;
   color: $white;
   background-size: 1.125rem 1.125rem;
-  text-indent: -9999px;
+  text-align: center;
+  &:hover {
+    background-color: tint_color($primary, 40%);
+  }
   i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $white;
   }
 }
@@ -241,6 +272,10 @@ section {
     padding: 20px;
   }
   .image-container {
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      min-height: 500px;
+    }
     img {
       width: 100%;
       @media screen and (min-width: 1200px) {
@@ -254,13 +289,15 @@ section {
   }
 }
 
+
+
 .materiels-more-infos {
   .desciption-container {
     text-align: left;
   }
   .underlined-title {
     color: $primary;
-    font-size: 2rem;
+    font-size: 2.5rem;
     position: relative;
     margin-bottom: 20px;
     &:before {
@@ -276,6 +313,34 @@ section {
   .image-container {
     img {
       width: 100%;
+    }
+  }
+}
+
+// materiels prices
+.materiels-prices {
+  .materiels-prices-item {
+    padding: 15px;
+    .price-item {
+      color: $primary;
+      font-weight: 700;
+    }
+    .description {
+      text-align: center;
+      & > img {
+        margin: 20px 0;
+        @media screen and(min-width: 1200px) {
+          max-width: 60%;
+        }
+      }
+      ul {
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 15px 25px;
     }
   }
 }
