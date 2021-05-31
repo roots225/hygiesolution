@@ -27,4 +27,23 @@ document.addEventListener('DOMContentLoaded', function(){
 					$('a.back-to-top').fadeOut('500');
 			}
 	});
+
+	let menuToggled = false
+	$('.navbar-toggler').on('click', function(){
+		menuToggled = !menuToggled
+		if (menuToggled) {
+			$('.navbar-toggler').html('<span class="bi-x-lg"></span>')
+			$('.navbar-mobile').addClass('toggled')
+		} else {
+			$('.navbar-toggler').html('<span class="navbar-toggler-icon"></span>')
+			$('.navbar-mobile').removeClass('toggled')
+		}
+	})
+
+	document.querySelector('#navbarSupportedContent').addEventListener('show.bs.collapse', function(){
+		$('.navbar-toggler').html('<span class="bi-x-lg"></span>')
+	})
+	document.querySelector('#navbarSupportedContent').addEventListener('hide.bs.collapse', function(){
+		$('.navbar-toggler').html('<span class="navbar-toggler-icon"></span>')
+	})
 })

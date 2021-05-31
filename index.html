@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img class="logo" src="images/logo-hygie.png" alt=""/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -37,6 +37,25 @@
         </div>
       </div>
     </nav>
+    <nav class="navbar navbar-mobile">
+      <div class="navbar-container d-flex align-items-center">
+        <h1 class="menu-title">Menu</h1>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fonctionnalités</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <section class="home-banner">
       <div class="container">
         <div class="row">
@@ -52,7 +71,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="d-flex app-image-view">
+            <div class="app-image-view">
               <img class="" src="images/chef_app_illustration.png" alt="">
             </div>
           </div>
@@ -66,8 +85,34 @@
       <div class="container">
         <h1 class="section-title text-center">Le PMS réinventé</h1>
         <h5 class="text-center">Solution destinée aux restaurateurs afin de simplifier leurs enregistrements d’hygiène quotidiens.</h5>
-        <div>
+      </div>
 
+      <div class="container ads">
+        <div class="row mb-5">
+          <div class="col-lg-6 image-container">
+            <img src="https://inovatik.com/leno/images/details-1.png" alt="">
+          </div>
+          <div class="col-lg-6 messages">
+            <h4>Start using Leno today and set your long term goals</h4>
+            <div class="content">
+              <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check it out</p>
+
+              <button class="btn btn-primary rounded-pill">En savoir plus</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 messages">
+            <h4>Start using Leno today and set your long term goals</h4>
+            <div class="content">
+              <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check it out</p>
+
+              <button class="btn btn-primary rounded-pill">En savoir plus</button>
+            </div>
+          </div>
+          <div class="col-lg-6 image-container">
+            <img src="https://inovatik.com/leno/images/details-2.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -91,7 +136,7 @@
     <section class="fonctionalities">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 image-container">
+          <div class="col-md-6 image-container oblique fromright">
             <img class="fonction-image" src="images/lecamionquifume.jpg" alt="">
           </div>
           <div class="col-md-6">
@@ -118,14 +163,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 image-container">
+          <div class="col-md-6 image-container oblique fromleft">
             <img class="fonction-image" src="images/lecamionquifume.jpg" alt="">
           </div>
         </div>
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 image-container">
+          <div class="col-md-6 image-container oblique fromright">
             <img class="fonction-image" src="images/lecamionquifume.jpg" alt="">
           </div>
           <div class="col-md-6">
@@ -157,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 image-container">
+          <div class="col-md-6 image-container oblique fromleft">
             <img class="fonction-image" src="images/lecamionquifume.jpg" alt="">
           </div>
         </div>
@@ -292,7 +337,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="pros-item">
               <div class="icon">
-                <i class="bi-gear"></i>
+                <i class="bi-easel"></i>
               </div>
               <h4 class="pros-title">Pédagogique</h4>
               <div class="description">
@@ -347,7 +392,7 @@
           </div>
 
           <div class="col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-            <div class="w-80">
+            <div class="lg-w-80">
               <h2 class="subtitle">Capteurs de température connectés</h2>
               <div class="description">
                 <p>Enregistrez automatiquement les températures de vos
@@ -461,6 +506,71 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-item">
+            <img class="logo" src="images/logo-hygie.png" alt="">
+            <div class="description">
+              <p>Une solution pensée par des experts de la restauration qui simplifie vos enregistrements HACCP.</p>
+            </div>
+            <div class="socials">
+              <div class="item"><a href="https://www.linkedin.com/company/hygie-solution/"><i class="bi-linkedin"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-item">
+            <h4 class="title">Pour qui ?</h4>
+            <div class="content">
+              <ul class="list-unstyled">
+                <li><a href="#"> <span>Cafés, Hôtels, Restaurants</span></a></li>
+                <li><a href="#"> <span>Evènementiel</span></a></li>
+                <li><a href="#"> <span>Grande distribution</span></a></li>
+                <li><a href="#"> <span>Restauration collective</span></a></li>
+                <li><a href="#"> <span>Métiers de bouche</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-item">
+            <h4 class="title">Contacts</h4>
+            <div class="content">
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="bi-pin-map"></i> <span>9 Rue du général leclerc</span></a></li>
+                <li><a href="#"><i class="bi-pin-map"></i> <span>94520, PERIGNY</span></a></li>
+                <li><a href="mailto:contact@hygiesolution.com"><i class="bi-envelope"></i> <span>contact@hygiesolution.com</span></a></li>
+                <li><a href="tel:+33 (0) 175482155"><i class="bi-phone"></i> <span>+33 (0) 175482155</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-item">
+            <h4 class="title">Téléchargements</h4>
+            <div class="content">
+              <p>La solution Hygie est disponible sur l’app store pour tablette et smartphone. Et prochainement disponible sur Android.</p>
+              <div class="download-link d-flex justify-content-around align-items-center">
+                <a href="https://apps.apple.com/fr/app/hygie/id1488273943" target="_blank" rel="noopener noreferrer">
+                  <img class="alignnone size-full wp-image-936" src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/footer-icon1.png" alt="g">
+                </a>
+                <a href="https://hygiesolution.com/version-android/">
+                  <img class="alignnone size-full wp-image-937"  src="https://dev.hygiesolution.com/wp-content/uploads/2018/06/footer-icon2-1.png" alt="h">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
   
   <a href="body" class="back-to-top page-scroll"><i class="bi-chevron-up"></i></a>
 
