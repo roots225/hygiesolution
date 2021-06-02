@@ -1,0 +1,15 @@
+# Do not change this line.
+RewriteEngine on
+  
+# Change yourdomain.com to be your main domain.
+# RewriteCond %{HTTP_HOST} ^(www.)?mysteredelhospitalite.com$
+  
+# Change 'subfolder' to be the folder you will use for your main domain.
+RewriteCond %{REQUEST_URI} !^/web/
+  
+# Don't change this line.
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+  
+# Change 'subfolder' to be the folder you will use for your main domain.
+RewriteRule ^(.*)$ /web/$1
