@@ -1,0 +1,28 @@
+.blogs {
+
+}
+.blog-list {
+  .blog-list-item {
+    margin-bottom: 40px;
+    & + div.blog-list-item {
+      padding-left: 20px;
+    }
+    &:first-child, &:nth-child(4n) {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    .title {
+      color: $text-primary;
+      font-weight: 500;
+      min-height: 50px;
+      vertical-align: center;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

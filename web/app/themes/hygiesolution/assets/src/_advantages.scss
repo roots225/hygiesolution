@@ -1,0 +1,22 @@
+.advantages {
+  background-image: url(https://hygiesolution.com/wp-content/uploads/2019/12/agency-startup-img-34-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  .advantages-item {
+    text-align: center;
+    display: inline-block;
+    padding: 30px;
+    transition: all 0.2s ease 0s;
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(137, 173, 255, 0.35) 0px 10px 55px 5px;
+      transform: translate3d(0px, -20px, 0px);
+      border-radius: 15px;
+    }
+    .title {
+      color: $text-primary;
+      margin: 10px 0px 8px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*
+Theme Name: Custom
+Author: Gilles Yao
+Author URI: https://masse-messages.com/
+Description: Hygie Solution custom theme
+Requires PHP: 7.1 or later
+Tags: landing page, website, enterprise
+Text Domain: hygiesolution
+*/
+
+@import "assets/css/app.css";
